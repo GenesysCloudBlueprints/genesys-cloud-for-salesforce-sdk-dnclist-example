@@ -1,4 +1,13 @@
-# Update a Genesys Cloud Do Not Contact list with the Genesys Cloud for Salesforce SDK
+---
+title: Update a Genesys Cloud Do Not Contact list with the Genesys Cloud for Salesforce SDK
+author: amy.miller
+indextype: blueprint
+icon: blueprint
+image: assets/img/update_genesyscloud_dnclist_with_genesyscloud_slf_sdk_workflow_diagram.png
+category: 3
+summary: |
+  This Genesys Cloud Developer Blueprint illustrates how to use the Genesys Cloud for Salesforce SDK to add the primary phone number of a Salesforce Contact to a Genesys Cloud Do Not Contact (DNC) list. The management of DNC lists is a crucial component to campaign management. In Genesys Cloud, you create and manage DNC lists. With the Genesys Cloud for Salesforce SDK, you can integrate these lists into your Salesforce organization.
+---
 
 This Genesys Cloud Developer Blueprint illustrates how to use the Genesys Cloud for Salesforce SDK to add the primary phone number of a Salesforce Contact to a Genesys Cloud Do Not Contact (DNC) list. The management of DNC lists is a crucial component to campaign management. In Genesys Cloud, you create and manage DNC lists. With the Genesys Cloud for Salesforce SDK, you can integrate these lists into your Salesforce organization.
 
