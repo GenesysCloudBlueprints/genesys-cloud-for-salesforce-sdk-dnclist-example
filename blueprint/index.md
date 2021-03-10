@@ -13,7 +13,7 @@ This Genesys Cloud Developer Blueprint illustrates how to use the Genesys Cloud 
 
 This blueprint is fully functional, but outlines a simple implementation. For a more robust implementation, you can modify it to handle multiple phone number fields (home, mobile, other) or change the code to handle bulk insert and update operations. For more information, see the [Additional resources](#additional_resources "Goes to the Additional resources section") section.
 
-![Workflow to update a Genesys Cloud DNC list with the Genesys Cloud for Salesforce SDK](/blueprint/assets/img/update_genesyscloud_dnclist_with_genesyscloud_slf_sdk_workflow_diagram.png "Workflow to update a Genesys Cloud DNC list with the Genesys Cloud for Salesforce SDK")
+![Workflow to update a Genesys Cloud DNC list with the Genesys Cloud for Salesforce SDK](assets/img/update_genesyscloud_dnclist_with_genesyscloud_slf_sdk_workflow_diagram.png "Workflow to update a Genesys Cloud DNC list with the Genesys Cloud for Salesforce SDK")
 
 * [Solution components](#solution_components "Goes to the Solution components section")
 * [Prerequisites](#prerequisites "Goes to the Prerequisites section")
@@ -69,7 +69,7 @@ The solutions engineer must have a System Administrator profile. For more inform
 
     You will use this ID after you create a custom field. See the [Create a custom setting in Salesforce](#create_a_custom_setting_in_salesforce "Goes to the Create a custom setting in Salesforce section") section.
 
-    ![Copy the DNC list ID from the URL](/blueprint/assets/img/copy-dnc-list-id-from-url.png "Copy the DNC list ID from the URL")
+    ![Copy the DNC list ID from the URL](assets/img/copy-dnc-list-id-from-url.png "Copy the DNC list ID from the URL")
 
 ### Create a custom setting in Salesforce
 
@@ -148,7 +148,7 @@ This field is hidden by default. Make the field visible to profiles and then add
 
     For more information, see [Page Layouts](https://help.salesforce.com/articleView?id=customize_layout.htm&type=5 "Opens Page Layouts") in the Salesforce documentation.
 
-    ![Drag Do Not Call field into Contact Information section](/blueprint/assets/img/contact-do-not-call.png)
+    ![Drag Do Not Call field into Contact Information section](assets/img/contact-do-not-call.png)
 
     A **Do Not Call** check box now appears on all Contact records in Salesforce for the profiles that you selected.
 
