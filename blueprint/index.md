@@ -37,27 +37,27 @@ This blueprint is fully functional, but outlines a simple implementation. For a 
 
 ### Genesys Cloud account
 
-This solution requires a Genesys Cloud license. For more information, see [Genesys Cloud pricing](https://www.genesys.com/pricing "Opens the Genesys Cloud pricing page") on the Genesys website.
+* A Genesys Cloud license. For more information, see [Genesys Cloud pricing](https://www.genesys.com/pricing "Opens the Genesys Cloud pricing page") on the Genesys website.
 
-The solutions engineer must be assigned the **Integration** > **Salesforce** > **Agent** permission. For more information, see [Administrator requirements for the Genesys Cloud embedded clients](https://help.mypurecloud.com/?p=166994 "Opens the Administrator requirements for the Genesys Cloud embedded clients article") in the Genesys Cloud Resource Center.
+* The solutions engineer assigned the **Integration** > **Salesforce** > **Agent** permission. For more information, see [Administrator requirements for the Genesys Cloud embedded clients](https://help.mypurecloud.com/?p=166994 "Opens the Administrator requirements for the Genesys Cloud embedded clients article") in the Genesys Cloud Resource Center.
 
-The solution also requires an OAuth client with roles that are assigned the Campaign Management permissions and the **Outbound** > **DNC List** > **Add** permission. For more information, see [OAuth client permissions for Genesys Cloud for Salesforce](https://help.mypurecloud.com/?p=188903 "Opens the OAuth client permissions for Genesys Cloud for Salesforce article") and [Create an OAuth client](https://help.mypurecloud.com/?p=188023 "Opens the Create an OAuth client article") in the Genesys Cloud Resource Center.
+* An OAuth client with roles that are assigned the Campaign Management permissions and the **Outbound** > **DNC List** > **Add** permission. For more information, see [OAuth client permissions for Genesys Cloud for Salesforce](https://help.mypurecloud.com/?p=188903 "Opens the OAuth client permissions for Genesys Cloud for Salesforce article") and [Create an OAuth client](https://help.mypurecloud.com/?p=188023 "Opens the Create an OAuth client article") in the Genesys Cloud Resource Center.
 
 ### Salesforce account
 
-This solution requires a Salesforce organization with the Genesys Cloud for Salesforce integration installed and configured. For more information, see [Install or upgrade the Genesys Cloud for Salesforce managed package](https://help.mypurecloud.com/?p=39356/ "Opens the Install or upgrade the Genesys Cloud for Salesforce managed package article") and [Set up a call center in Salesforce](https://help.mypurecloud.com/?p=10593 "Opens the Set up a call center in Salesforce article") in the Genesys Cloud Resource Center.
+* A Salesforce organization with the Genesys Cloud for Salesforce integration installed and configured. For more information, see [Install or upgrade the Genesys Cloud for Salesforce managed package](https://help.mypurecloud.com/?p=39356/ "Opens the Install or upgrade the Genesys Cloud for Salesforce managed package article") and [Set up a call center in Salesforce](https://help.mypurecloud.com/?p=10593 "Opens the Set up a call center in Salesforce article") in the Genesys Cloud Resource Center.
 
-Salesforce and the Genesys Cloud for Salesforce integration must be configured for campaign management. For more information, see [Set up campaign management in Genesys Cloud for Salesforce](https://help.mypurecloud.com/?p=194714 "Opens the Set up campaign management in Genesys Cloud for Salesforce article") in the Genesys Cloud Resource Center.
+* The Salesforce organization and the Genesys Cloud for Salesforce integration configured for campaign management. For more information, see [Set up campaign management in Genesys Cloud for Salesforce](https://help.mypurecloud.com/?p=194714 "Opens the Set up campaign management in Genesys Cloud for Salesforce article") in the Genesys Cloud Resource Center.
 
-The solutions engineer must have a System Administrator profile. For more information, see [Standard Profiles](https://help.salesforce.com/articleView?id=standard_profiles.htm&type=5 "Opens Standard Profiles") in the Salesforce documentation.
+* The solutions engineer assigned a System Administrator profile. For more information, see [Standard Profiles](https://help.salesforce.com/articleView?id=standard_profiles.htm&type=5 "Opens Standard Profiles") in the Salesforce documentation.
 
 ## Implementation steps
 
-- [Create an internal DNC list in Genesys Cloud](#create_an_internal_dnc_list_in_genesys_cloud "Goes to the Create an internal DNC list in Genesys Cloud section")
-- [Create a custom setting in Salesforce](#create_a_custom_setting_in_salesforce "Goes to the Create a custom setting in Salesforce section")
-- [Configure the Do Not Call field in Salesforce](#configure_the_do_not_call_field_in_salesforce "Goes to the Configure the Do Not Call field in Salesforce section")
-- [Create an Apex trigger and class](#create_an_apex_trigger_and_class "Goes to the Create an Apex trigger and class section")
-- [Test your work](#test_your_work "Goes to the Test your work section")
+* [Create an internal DNC list in Genesys Cloud](#create_an_internal_dnc_list_in_genesys_cloud "Goes to the Create an internal DNC list in Genesys Cloud section")
+* [Create a custom setting in Salesforce](#create_a_custom_setting_in_salesforce "Goes to the Create a custom setting in Salesforce section")
+* [Configure the Do Not Call field in Salesforce](#configure_the_do_not_call_field_in_salesforce "Goes to the Configure the Do Not Call field in Salesforce section")
+* [Create an Apex trigger and class](#create_an_apex_trigger_and_class "Goes to the Create an Apex trigger and class section")
+* [Test your work](#test_your_work "Goes to the Test your work section")
 
 ### Create an internal DNC list in Genesys Cloud
 
