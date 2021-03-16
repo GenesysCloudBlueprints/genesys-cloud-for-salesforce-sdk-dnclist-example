@@ -63,7 +63,7 @@ This blueprint is fully functional, but outlines a simple implementation. For a 
 
 1. In your Genesys Cloud organization, create an internal DNC list.
 
-    The **assets/data/** folder in GitHub contains an example .csv file that you use. For more information, see [Create a new internal DNC list](https://help.mypurecloud.com/?p=4107 "Opens the Create a new internal DNC list article") in the Genesys Cloud Resource Center.
+    The **assets/data/** folder in GitHub contains an example .csv file that you use. For more information, see the [genesys-cloud-for-salesforce-sdk-dnclist-example](https://github.com/GenesysCloudBlueprints/genesys-cloud-for-salesforce-sdk-dnclist-example "Opens the genesys-cloud-for-salesforce-sdk-dnclist-example repository in GitHub") repository in GitHub and [Create a new internal DNC list](https://help.mypurecloud.com/?p=4107 "Opens the Create a new internal DNC list article") in the Genesys Cloud Resource Center.
 
 2. Copy and save the ID of the DNC list.
 
@@ -215,5 +215,6 @@ HttpResponse response = purecloud.SDK.Rest.post(
 * [Platform API: Troubleshooting](https://developer.mypurecloud.com/api/rest/index.html#troubleshooting "Opens the Troubleshooting section in the Platform API page")
 * [About Genesys Cloud for Salesforce](https://help.mypurecloud.com/?p=65221 "Opens the About Genesys Cloud for Salesforce article") in the Genesys Cloud Resource Center
 * [About Campaign Management in Genesys Cloud for Salesforce](https://help.mypurecloud.com/?p=153769 "Opens the About Campaign Management in Genesys Cloud for Salesforce") in the Genesys Cloud Resource Center
+* The [genesys-cloud-for-salesforce-sdk-dnclist-example](https://github.com/GenesysCloudBlueprints/genesys-cloud-for-salesforce-sdk-dnclist-example "Opens the genesys-cloud-for-salesforce-sdk-dnclist-example repository in GitHub") repository in GitHub
 
 This content is [licensed](https://github.com/GenesysCloudBlueprints/genesys-cloud-for-salesforce-sdk-dnclist-example/blob/master/LICENSE "Opens the MIT License in GitHub") under the MIT license.
