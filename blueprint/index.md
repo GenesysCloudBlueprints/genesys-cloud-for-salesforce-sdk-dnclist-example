@@ -11,14 +11,14 @@ summary: |
 
 This Genesys Cloud Developer Blueprint illustrates how to use the Genesys Cloud for Salesforce SDK to add the primary phone number of a Salesforce Contact to a Genesys Cloud Do Not Contact (DNC) list. The management of DNC lists is a crucial component to campaign management. In Genesys Cloud, you create and manage DNC lists. With the Genesys Cloud for Salesforce SDK, you can integrate these lists into your Salesforce organization.
 
-This blueprint is fully functional, but outlines a simple implementation. For a more robust implementation, you can modify it to handle multiple phone number fields (home, mobile, other) or change the code to handle bulk insert and update operations. For more information, see the [Additional resources](#additional_resources "Goes to the Additional resources section") section.
+This blueprint is fully functional, but outlines a simple implementation. For a more robust implementation, you can modify it to handle multiple phone number fields (home, mobile, other) or change the code to handle bulk insert and update operations. For more information, see the [Additional resources](#additional-resources "Goes to the Additional resources section") section.
 
 ![Workflow to update a Genesys Cloud DNC list with the Genesys Cloud for Salesforce SDK](assets/img/update_genesyscloud_dnclist_with_genesyscloud_slf_sdk_workflow_diagram.png "Workflow to update a Genesys Cloud DNC list with the Genesys Cloud for Salesforce SDK")
 
-* [Solution components](#solution_components "Goes to the Solution components section")
+* [Solution components](#solution-components "Goes to the Solution components section")
 * [Prerequisites](#prerequisites "Goes to the Prerequisites section")
-* [Implementation steps](#implementation_steps "Goes to the Implementation steps section")
-* [Additional resources](#additional_resources "Goes to the Additional resources section")
+* [Implementation steps](#implementation-steps "Goes to the Implementation steps section")
+* [Additional resources](#additional-resources "Goes to the Additional resources section")
 
 ## Solution components
 
@@ -53,11 +53,11 @@ This blueprint is fully functional, but outlines a simple implementation. For a 
 
 ## Implementation steps
 
-* [Create an internal DNC list in Genesys Cloud](#create_an_internal_dnc_list_in_genesys_cloud "Goes to the Create an internal DNC list in Genesys Cloud section")
-* [Create a custom setting in Salesforce](#create_a_custom_setting_in_salesforce "Goes to the Create a custom setting in Salesforce section")
-* [Configure the Do Not Call field in Salesforce](#configure_the_do_not_call_field_in_salesforce "Goes to the Configure the Do Not Call field in Salesforce section")
-* [Create an Apex trigger and class](#create_an_apex_trigger_and_class "Goes to the Create an Apex trigger and class section")
-* [Test your work](#test_your_work "Goes to the Test your work section")
+* [Create an internal DNC list in Genesys Cloud](#create-an-internal-dnc-list-in-genesys-cloud "Goes to the Create an internal DNC list in Genesys Cloud section")
+* [Create a custom setting in Salesforce](#create-a-custom-setting-in-salesforce "Goes to the Create a custom setting in Salesforce section")
+* [Configure the Do Not Call field in Salesforce](#configure-the-do-not-call-field-in-salesforce "Goes to the Configure the Do Not Call field in Salesforce section")
+* [Create an Apex trigger and class](#create-an-apex-trigger-and-class "Goes to the Create an Apex trigger and class section")
+* [Test your work](#test-your-work "Goes to the Test your work section")
 
 ### Create an internal DNC list in Genesys Cloud
 
@@ -67,7 +67,7 @@ This blueprint is fully functional, but outlines a simple implementation. For a 
 
 2. Copy and save the ID of the DNC list.
 
-    You will use this ID after you create a custom field. See the [Create a custom setting in Salesforce](#create_a_custom_setting_in_salesforce "Goes to the Create a custom setting in Salesforce section") section.
+    You will use this ID after you create a custom field. See the [Create a custom setting in Salesforce](#create-a-custom-setting-in-salesforce "Goes to the Create a custom setting in Salesforce section") section.
 
     ![Copy the DNC list ID from the URL](assets/img/copy-dnc-list-id-from-url.png "Copy the DNC list ID from the URL")
 
@@ -118,7 +118,7 @@ For more information, see [Add Custom Settings Fields](https://help.salesforce.c
 
     e. For **Name**, enter **DNC_List_Id**.
 
-    f. For **DNC_List_Id**, enter the ID of the DNC list that you copied and saved earlier. See the [Create an internal DNC list in Genesys Cloud](#create_an_internal_dnc_list_in_genesys_cloud "Goes to the Create an internal DNC list in Genesys Cloud section") section.
+    f. For **DNC_List_Id**, enter the ID of the DNC list that you copied and saved earlier. See the [Create an internal DNC list in Genesys Cloud](#create-an-internal-dnc-list-in-genesys-cloud "Goes to the Create an internal DNC list in Genesys Cloud section") section.
 
     g. Click **Save**.
 
